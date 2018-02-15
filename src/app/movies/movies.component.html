@@ -1,0 +1,18 @@
+<div class="container">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let movie of movies" >
+        <div class="card w-30" >
+          <div class="card-body">
+            <h4 class="card-title"><a [routerLink]="['/movies',movie.name]">{{movie.name}}</a></h4>
+            <p class="card-text"><label>id:</label>{{movie.id}}</p>
+            <p class="card-text"><label>releasedate:</label>{{movie.releasedate}}</p>
+            <p class="card-text"><label>Rating:</label>{{movie.rating}}</p>
+            <p class="card-text"><label>Language:</label>{{movie.language}}</p>
+            <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Update movie" [routerLink]="['/updatemovie',movie.name]">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,19 @@
+<div class="jumbotron">
+    <span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size:40px"></span>
+    <h2>Movie details</h2>
+    <div class="container well" >
+      <h5>
+        <label><b>Movie name:</b> </label> {{movie?.name}}
+        <br>
+        <label><b>Movie id:</b> </label> {{movie?.id}}
+        <br>
+        <label><b>Movie release:</b> </label> {{movie?.releasedate}}
+        <br>
+        <label><b>Movie rating:</b></label> {{movie?.rating}}
+        <br>
+        <label><b>Movie language:</b></label> {{movie?.language}}
+        <br>
+      </h5>
+    </div>
+    <button class="btn btn-success" [routerLink]="['/movies']">Back </button>
+  </div>

@@ -1,0 +1,24 @@
+<div class="jumbotron">
+    <form #updatemovie="ngForm">
+    <h2>Update movie details</h2>
+    <h4>
+        <label>Movie id:</label>
+        <input type="text"  [(ngModel)]="id" name="id" placeholder="enter movie id">
+        <br>
+      <label>Movie Name:</label>
+      <input type="text" [(ngModel)]="name" name="name" placeholder="enter movie name">
+      <br>
+      <label>Movie release date:</label>
+      <input type="text" [(ngModel)]="date" name="date" placeholder="enter movie release-date">
+      <br>
+      <label>Movie rating:</label>
+      <input type="text"  [(ngModel)]="rating" name="rating" placeholder="enter movie name">
+      <br>
+      <label>Movie language:</label>
+      <input type="text"  [(ngModel)]="language" name="language" placeholder="enter movie language">
+      <br>
+    </h4>
+    <button type="submit" class="btn btn-success" (click)="updateMovie(updatemovie.value)">Update</button>
+    <button type="submit" class="btn btn-danger" (click)="cancel()">Cancel</button>
+    </form>
+</div>
